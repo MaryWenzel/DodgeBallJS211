@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Indie+Flower&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Dodge Ball</title>
+    </head>
+    <body>
+        <h1>Red VS Blue</h1>
+        <div class="main-box">
+          <div class="pick-box">
+            <h2 id='header'></h2>
+            <ul id="people"></ul>
+          </div>
+          <div id="listPeople">
+            <button class="char-button" onclick="listPeopleChoices() ">Character Select</button>
+          </div>
+          <div class="player-box" id="dodgeball-players">
+            <ul id="players"></ul>
+          </div>
+        </div>
+        <div class="halo-box">
+          <div class="red-box" id='red-team'>
+            <h2>Red Team</h2>
+            <ul id="red"></ul>
+          </div>
+          <div class="blue-box" id='blue-team'>
+              <h2>Blue Team</h2>
+              <ul id="blue"></ul>
+          </div>
+          <div class="img-box">
+            <img src="./dodgeball.jpg" alt="halo game image">
+          </div>
+        </div>
+        <script src='./main.js' async></script>
+  </body>
+</html>

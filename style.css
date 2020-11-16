@@ -1,0 +1,90 @@
+body {
+  background-color: #0a0709;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  margin-top: -5px;
+  color: white;
+  text-shadow: 4px 4px 3px rgba(29, 93, 241, 0.56);
+}
+
+h2 {
+  color: white;
+}
+
+img {
+  height: 500px;
+  width: 900px;
+}
+
+/* character select */
+.char-button {
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-right: 350px;
+  box-shadow: 3px 3px 2px rgba(29, 93, 241, 0.56);
+}
+
+/* Top of page portion with players info */
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "pick-char players";
+  height: 26vh;
+  width: 900px;
+  margin: auto;
+}
+
+.pick-box {
+  grid-area: pick-char;
+}
+
+.player-box {
+  grid-area: players;
+}
+
+/* Team and Halo container */
+.halo-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "blue-halo img red-halo";
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #8b1009, #071b34);
+}
+
+.blue-box {
+  grid-area: blue-halo;
+  background-color: #03010a;
+}
+
+.red-box {
+  grid-area: red-halo;
+  background-color: #110707;
+}
+
+.img-box {
+  grid-area: img;
+}
+
+li {
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: "Abel", sans-serif;
+  color: white;
+}
+
+button {
+  font-family: "Abel", sans-serif;
+}
